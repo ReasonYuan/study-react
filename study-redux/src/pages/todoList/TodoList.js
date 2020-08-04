@@ -1,14 +1,14 @@
 /*
  * @Author: reason
  * @Date: 2020-08-03 17:46:07
- * @LastEditTime: 2020-08-04 11:09:02
+ * @LastEditTime: 2020-08-04 13:44:03
  * @FilePath: /study-react/study-redux/src/pages/todoList/TodoList.js
  * @Descripttion: 
  */
 import React, { Component } from 'react';
 import ToDoListUI from './TodoListUI'
 import store from '../../store'
-import { changeInputAction, addItemAction, deleteItemAction } from '../../store/actionCreators'
+import { getTodoList, changeInputAction, addItemAction, deleteItemAction } from '../../store/actionCreators'
 
 class TodoList extends Component {
   constructor(props) {
@@ -18,6 +18,12 @@ class TodoList extends Component {
     this.deleteItem = this.deleteItem.bind(this);
     store.subscribe(this.storeChange.bind(this))
   }
+
+  componentDidMount() {
+    const action = getTodoList();
+    store.dispatch(action)
+  }
+
   render() {
     return (
       <ToDoListUI 

@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-03 20:27:54
- * @LastEditTime: 2020-08-04 10:54:00
+ * @LastEditTime: 2020-08-04 13:44:33
  * @FilePath: /study-react/study-redux/src/store/reducer.js
  * @Descripttion: 
  */
@@ -13,11 +13,11 @@
  * 
  */
 
-import { CHANGE_INPUT, ADD_ITEM, DELETE_ITEM } from './actionTypes'
+import { CHANGE_INPUT, ADD_ITEM, DELETE_ITEM, GET_LIST } from './actionTypes'
 
 const defaultState = {
   inputValue: 'something',
-  list: [ '吃早饭', '吃午饭', '吃晚饭' ]
+  list: [ ]
 
 };
 // Reducer里只能接收state,不能改变state
@@ -36,6 +36,11 @@ export default (state = defaultState, action) => {
 
   if (action.type === DELETE_ITEM) {
     newState.list.splice(action.index, 1);
+    return newState
+  }
+
+  if (action.type === GET_LIST ) {
+    newState.list = action.data;
     return newState
   }
 
