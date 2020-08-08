@@ -1,13 +1,13 @@
 /*
  * @Author: reason
  * @Date: 2020-08-08 14:17:33
- * @LastEditTime: 2020-08-08 14:26:23
+ * @LastEditTime: 2020-08-08 14:51:00
  * @FilePath: /study-react/study-router/src/pages/lesson-2/video.js
  * @Descripttion: 
  */
 
 import React from 'react'
-import { Route, Link, Redirect } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 
 import Vue from './video/Vue'
 import Flutter from './video/Flutter'
