@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-08 10:58:20
- * @LastEditTime: 2020-08-08 11:15:09
+ * @LastEditTime: 2020-08-08 14:05:56
  * @FilePath: /study-react/study-router/src/index.js
  * @Descripttion: 
  */
@@ -26,6 +26,10 @@ import ReactDOM from 'react-dom';
 
 
 // ================ lesson 1 ================
-import AppRouter from './pages/lesson-1/AppRouter'
+// import AppRouter from './pages/lesson-1/AppRouter'
+// ReactDOM.render(<AppRouter />, document.getElementById('root'));
 
+
+// ================ lesson 2 ================
+import AppRouter from './pages/lesson-2/AppRouter'
 ReactDOM.render(<AppRouter />, document.getElementById('root'));
