@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-08 14:02:45
- * @LastEditTime: 2020-08-08 15:01:18
+ * @LastEditTime: 2020-08-08 15:17:54
  * @FilePath: /study-react/study-router/src/pages/lesson-2/AppRouter.js
  * @Descripttion: 
  */
@@ -25,7 +25,6 @@ function AppRouter () {
     {path: '/workplace/', title: '职场技能', exact: false, component: WorkPlace}
   ]
 
-
   return (
     <Router>
       <div className="mainDiv">
@@ -42,8 +41,6 @@ function AppRouter () {
                 return (<li key={index}><Link to={item.path}>{item.title}</Link></li>)
               })
             }
-              
-
           </ul>
         </div>
         
