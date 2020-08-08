@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-08 14:02:45
- * @LastEditTime: 2020-08-08 14:59:22
+ * @LastEditTime: 2020-08-08 15:01:18
  * @FilePath: /study-react/study-router/src/pages/lesson-2/AppRouter.js
  * @Descripttion: 
  */
@@ -21,8 +21,8 @@ function AppRouter () {
   // 动态路由
   const routerConfig = [
     {path: '/', title: '博客首页', exact: true, component: Index},
-    {path: '/video', title: '视频教程', exact: false, component: Video},
-    {path: '/workplace', title: '职场技能', exact: false, component: WorkPlace}
+    {path: '/video/', title: '视频教程', exact: false, component: Video},
+    {path: '/workplace/', title: '职场技能', exact: false, component: WorkPlace}
   ]
 
 
@@ -37,7 +37,7 @@ function AppRouter () {
               <li><Link to="/video">视频教程</Link></li>
               <li><Link to="/workplace">职场技能</Link></li> 
             */}
-            {
+            { // 动态路由
               routerConfig.map((item, index) => {
                 return (<li key={index}><Link to={item.path}>{item.title}</Link></li>)
               })
@@ -53,9 +53,9 @@ function AppRouter () {
             <Route path="/video" component={Video} />
             <Route path="/workplace" component={WorkPlace} />
           */}
-          {
+          { // 动态路由
             routerConfig.map((item, index) => {
-              return (<Route path={item.path} exact={item.exact} component={item.component} />)
+              return (<Route key={index} path={item.path} exact={item.exact} component={item.component} />)
             })
           }
         </div>
