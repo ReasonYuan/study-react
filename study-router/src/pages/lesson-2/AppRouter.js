@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-08 14:02:45
- * @LastEditTime: 2020-08-08 15:17:54
+ * @LastEditTime: 2020-08-10 16:06:47
  * @FilePath: /study-react/study-router/src/pages/lesson-2/AppRouter.js
  * @Descripttion: 
  */
@@ -56,7 +56,6 @@ function AppRouter () {
             })
           }
         </div>
-
       </div>
     </Router>
   )
