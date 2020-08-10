@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-08 14:02:45
- * @LastEditTime: 2020-08-10 16:06:47
+ * @LastEditTime: 2020-08-10 16:23:24
  * @FilePath: /study-react/study-router/src/pages/lesson-2/AppRouter.js
  * @Descripttion: 
  */
@@ -14,7 +14,6 @@ import Index from './Index'
 import Video from './Video'
 import WorkPlace from './WorkPlace'
 import './index.css'
-
 
 function AppRouter () {
 
