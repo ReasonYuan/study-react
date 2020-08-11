@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-11 20:14:28
- * @LastEditTime: 2020-08-11 20:21:42
+ * @LastEditTime: 2020-08-11 20:41:03
  * @FilePath: /study-react/study-hooks/src/index.js
  * @Descripttion: 
  */
@@ -25,5 +25,7 @@ import ReactDOM from 'react-dom';
 
 
 // ================ lesson 1 ================
-import Example from './lesson-1/Example'
+// import Example from './lesson-1/Example'
+// import Example from './lesson-1/Example2'
+import Example from './lesson-1/Example3'
 ReactDOM.render(<Example />, document.getElementById('root'));

@@ -1,21 +1,29 @@
 /*
  * @Author: reason
- * @Date: 2020-08-11 20:18:19
- * @LastEditTime: 2020-08-11 20:32:22
- * @FilePath: /study-react/study-hooks/src/lesson-1/Example.js
- * @Descripttion: 示例
+ * @Date: 2020-08-11 20:38:53
+ * @LastEditTime: 2020-08-11 20:47:08
+ * @FilePath: /study-react/study-hooks/src/lesson-1/Example3.js
+ * @Descripttion: useEffect讲解
+ * 1. useEffect 等价于 componentDidMount、componentDidUpdate
+ * 2. useEffect是异步的
  */
-
 // ============== 老的写法 ==============
 // import React, { Component } from 'react';
 
-// class Example extends Component {
+// class Example3 extends Component {
 
 //   constructor (props) {
 //     super(props)
 //     this.state = { count: 0 }
 //   }
 
+//   componentDidMount() {
+//     console.log(`componentDidMount => you clicked ${this.state.count} times`)
+//   }
+
+//   componentDidUpdate() {
+//     console.log(`componentDidUpdate => you clicked ${this.state.count} times`)
+//   }
 
 //   addCount() {
 //     this.setState({ count: this.state.count + 1 })
@@ -33,15 +41,14 @@
 
 
 // ============== Hooks ==============
-// 如何声明、如何读取、如何改变
+import React, { useState, useEffect } from 'react';
 
-import React, { useState } from 'react';
-
-function Example() {
+function Example3() {
   const [count, setCount] = useState(0); // 数组解构
-  // const _useState = userState(0);
-  // let count = _useState[0];
-  // let setState = _useState[1];
+
+  useEffect(() => {
+    console.log(`useEffect => you clicked ${count} times`)
+  })
 
   return (
     <div>
@@ -52,4 +59,5 @@ function Example() {
 }
 
 
-export default Example;
+
+export default Example3
