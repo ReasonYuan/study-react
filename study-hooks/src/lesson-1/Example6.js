@@ -1,10 +1,10 @@
 /*
  * @Author: reason
  * @Date: 2020-08-12 18:43:08
- * @LastEditTime: 2020-08-12 19:03:11
+ * @LastEditTime: 2020-08-12 19:05:35
  * @FilePath: /study-react/study-hooks/src/lesson-1/Example6.js
  * @Descripttion: useReducer (和useContext一起使用，达到Redux的效果)
- * 次节讲基本使用方法
+ * 此节讲基本使用方法
  */
 
 // =============== Reducer ===============
