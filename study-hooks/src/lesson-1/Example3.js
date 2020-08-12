@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-11 20:38:53
- * @LastEditTime: 2020-08-11 20:47:08
+ * @LastEditTime: 2020-08-12 17:21:14
  * @FilePath: /study-react/study-hooks/src/lesson-1/Example3.js
  * @Descripttion: useEffect讲解
  * 1. useEffect 等价于 componentDidMount、componentDidUpdate
@@ -57,7 +57,5 @@ function Example3() {
     </div>
   )
 }
-
-
 
 export default Example3
