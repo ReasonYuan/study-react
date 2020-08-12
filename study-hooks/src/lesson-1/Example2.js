@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-11 20:31:30
- * @LastEditTime: 2020-08-11 20:40:00
+ * @LastEditTime: 2020-08-12 17:43:40
  * @FilePath: /study-react/study-hooks/src/lesson-1/Example2.js
  * @Descripttion: useState的介绍和多状态声明
  */
@@ -26,6 +26,5 @@ function Example2() {
     </div>
   )
 }
-
 
 export default Example2;
