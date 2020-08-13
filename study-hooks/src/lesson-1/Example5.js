@@ -1,14 +1,13 @@
 /*
  * @Author: reason
  * @Date: 2020-08-12 18:43:08
- * @LastEditTime: 2020-08-12 18:51:19
+ * @LastEditTime: 2020-08-13 19:00:37
  * @FilePath: /study-react/study-hooks/src/lesson-1/Example5.js
  * @Descripttion: useContext (区别 -> useReducer: 解决状态共享的问题)
  * 解决父子组件间传值的问题
  */
 
 import React, { useState, createContext, useContext } from 'react';
-
 
 const CountContext = createContext(); // 创建一个共享组件
 
