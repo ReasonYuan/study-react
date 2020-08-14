@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-12 19:11:03
- * @LastEditTime: 2020-08-12 19:21:11
+ * @LastEditTime: 2020-08-14 18:51:14
  * @FilePath: /study-react/study-hooks/src/lesson-1/example7/Example7.js
  * @Descripttion: useReducer和useContext一起使用，达到Redux的效果
  * useCount : 可以管理全局状态，避免一层层传递 （共享业务状态）
@@ -14,7 +14,6 @@ import Buttons from './Buttons'
 import { Color } from './color'
 
 export default function Example7 () {
-
 
   return (
     <div>
