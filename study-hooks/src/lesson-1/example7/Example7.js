@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-12 19:11:03
- * @LastEditTime: 2020-08-14 18:51:14
+ * @LastEditTime: 2020-08-14 19:39:17
  * @FilePath: /study-react/study-hooks/src/lesson-1/example7/Example7.js
  * @Descripttion: useReducer和useContext一起使用，达到Redux的效果
  * useCount : 可以管理全局状态，避免一层层传递 （共享业务状态）
@@ -23,5 +23,4 @@ export default function Example7 () {
       </Color>
     </div>
   )
-
 }
