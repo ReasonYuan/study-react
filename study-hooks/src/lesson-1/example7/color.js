@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-12 19:14:34
- * @LastEditTime: 2020-08-12 19:24:35
+ * @LastEditTime: 2020-08-15 14:45:07
  * @FilePath: /study-react/study-hooks/src/lesson-1/example7/color.js
  * @Descripttion: 共享颜色状态
  */
@@ -20,7 +20,6 @@ const reducer = (state, action) => {
       return state;  
   }
 }
-
 
 export const Color = props => {
   const [color, dispatch] = useReducer(reducer, 'blue');
