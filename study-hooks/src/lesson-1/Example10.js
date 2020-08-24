@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-24 16:29:56
- * @LastEditTime: 2020-08-24 17:36:53
+ * @LastEditTime: 2020-08-24 17:39:07
  * @FilePath: /study-react/study-hooks/src/lesson-1/Example10.js
  * @Descripttion: hooks函数
  */
@@ -25,7 +25,7 @@ function useWinSize() {
   useEffect(() => {
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
-  })
+  }, [])
   return size;
 }
 
