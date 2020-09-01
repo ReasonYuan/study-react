@@ -1,11 +1,12 @@
 /*
  * @Author: reason
  * @Date: 2020-08-03 20:26:50
- * @LastEditTime: 2020-09-01 17:19:41
+ * @LastEditTime: 2020-09-01 18:25:46
  * @FilePath: /study-react/study-redux/src/store/index.js
  * @Descripttion: 
  */
 
+ 
 import {createStore, applyMiddleware, compose} from 'redux'
 import reducer from './reducer'
 import thunk from 'redux-thunk'
