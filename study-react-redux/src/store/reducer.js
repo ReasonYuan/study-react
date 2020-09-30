@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-04 14:31:41
- * @LastEditTime: 2020-09-30 18:14:11
+ * @LastEditTime: 2020-09-30 18:14:31
  * @FilePath: /study-react/study-react-redux/src/store/reducer.js
  * @Descripttion: 
  */
@@ -12,7 +12,6 @@ const defaultState = {
 }
 
 export default (state = defaultState, action) => {
-  
   const newState = JSON.parse(JSON.stringify(state));
   if (action.type === 'inputChange') {
     newState.inputValue = action.value;
