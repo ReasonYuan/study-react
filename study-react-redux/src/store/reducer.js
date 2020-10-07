@@ -1,12 +1,12 @@
 /*
  * @Author: reason
  * @Date: 2020-08-04 14:31:41
- * @LastEditTime: 2020-10-07 09:25:44
+ * @LastEditTime: 2020-10-07 10:24:50
  * @FilePath: /study-react/study-react-redux/src/store/reducer.js
  * @Descripttion: 
  */
 
- 
+
 const defaultState = {
   inputValue: 'sb',
   list: []
